@@ -1,0 +1,22 @@
+// <!-- button clicker -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <button id="toggleButton">Toggle Content</button>
+    <div class="content">
+        <p>This is the content that will fade in and out!</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#toggleButton').click(function() {
+                $('.content').fadeToggle();
+            });
+        });
+    </script>
+</body>
+</html>
